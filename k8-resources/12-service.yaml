@@ -7,10 +7,10 @@ spec:
     project: aws
     environment: dev
     component: backend 
-ports:
-  - protocol: TCP
-    port: 80 # service port
-    targetPort: 80   # container port
+  ports:
+   - protocol: TCP
+     port: 80 # service port
+     targetPort: 80   # container port
 
 
 ---
