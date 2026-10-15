@@ -20,7 +20,7 @@ spec:
 kind: Pod
 apiVersion: v1
 metadata:
- name: backend
+ name: backend-np
  labels:
   project: aws
   environment: dev
