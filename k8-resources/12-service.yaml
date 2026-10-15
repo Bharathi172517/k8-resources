@@ -1,0 +1,31 @@
+kind: Service
+apiVerson: v1
+metadata:
+  name: nginx
+spec:
+  selector:
+    project: aws
+    environment: dev
+    component: backend 
+ports:
+  - protocol: TCP
+    port: 80 # service port
+    targetPort: 80   # container port
+
+
+---
+
+kind: Pod
+apiVersion: v1
+metadata:
+ name: backend
+ labels:
+  project: aws
+  environment: dev
+  component: backend 
+spec:
+ containers:
+  - name: nginx
+    image: nginx
+    
+  
