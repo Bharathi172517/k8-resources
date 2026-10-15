@@ -3,7 +3,7 @@ apiVersion: v1
 metadata:
   name: nginx-lb
 spec:
-  type: LoadBalncer
+  type: LoadBalancer
   selector:
     project: aws
     environment: dev
